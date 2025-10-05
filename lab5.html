@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - CSS Selectors</title>
+    <link rel="stylesheet" href="lab5.css">
+</head>
+<body>
+
+    <h1 id="main-title">Mastering CSS Selectors</h1>
+
+    <h2>Introduction to Selectors</h2>
+    <p>
+        CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        The main goal of this lab is to demonstrate the power and flexibility of different selector types.
+    </p>
+
+    <h2>Different Selector Types</h2>
+    <p class="highlight">
+        This paragraph is highlighted using a **Class Selector**. Classes can be applied to multiple elements,
+        allowing for reusable styles across your page.
+    </p>
+
+    <p>
+        This paragraph is styled with the **Element Selector** only. Notice how it looks different from the one above.
+    </p>
+
+    <div class="list-container">
+        <h2>List Examples</h2>
+        <p>This paragraph is inside the div.</p>
+        <p>This is another paragraph inside the div.</p>
+        <ul>
+            <li>This is the first list item. (Child Selector target)</li>
+            <li>This is the second list item. (Child Selector target)</li>
+            <li>This is the third list item. (Child Selector target)</li>
+        </ul>
+        <p>This final paragraph is also inside the div, demonstrating the Descendant Selector.</p>
+    </div>
+
+    <div class="form-example">
+        <h2>Form Input Examples</h2>
+        <form>
+            <label for="text-input">Text Input:</label>
+            <input type="text" id="text-input" placeholder="Styled by Attribute Selector"><br><br>
+
+            <label for="email-input">Email Input:</label>
+            <input type="email" id="email-input" placeholder="Styled differently"><br><br>
+
+            <button><a href="#">Hover Me (Pseudo-class)</a></button>
+        </form>
+    </div>
+
+</body>
+</html>
