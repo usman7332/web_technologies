@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    background-color: #0f2743; 
+    padding: 20px 30px;
+   
+}
+
+.header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* Footer styling (matches your dark navy footer in the image) */
+.site-footer {
+  width: 100%;
+  background: #0f2743; /* same dark navy as header */
+  color: #ffffff;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  position: relative; /* use fixed if you want it always at bottom */
+  left: 0;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* inner wrapper centers the text and controls max width */
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Small screens — slightly smaller text & padding */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 16px 12px;
+  }
+  .footer-inner {
+    font-size: 16px;
+  }
+}
+
+/* Optional: make footer sticky to viewport bottom */
+/* Uncomment if you want footer always visible at bottom of screen */
+
+.site-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+}
+
+
+
+
+/* Center Message Styling */
+.center-msg {
+    text-align: center;
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-msg h2 {
+    font-size: 48px;
+    color: #0f2743; /* dark navy text */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.center-msg p {
+    font-size: 22px;
+    color: #0f2743;
+    margin-bottom: 40px;
+}
+
+/* Start Quiz Button */
+.start-btn {
+    background: #0f2743;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #153659;
+}
+
+
