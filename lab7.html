@@ -1,0 +1,79 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Lab 7 - JavaScript Fundamentals</title> 
+</head> 
+ 
+<body> 
+    <h2>JavaScript Lab Tasks</h2> 
+ 
+    <button onclick="task1()">Task 1: User Info</button> 
+    <br><br> 
+ 
+    <button onclick="task2()">Task 2: Arithmetic and Comparison</button> 
+ 
+    <script> 
+        function task1() { 
+            var name = prompt("Enter your name:"); 
+            var reg = prompt("Enter your Registration ID:"); 
+            alert("Your Name: " + name + "\nRegistration ID: " + reg); 
+ 
+ 
+2 
+ 
+        } 
+ 
+        function task2() { 
+            var num1 = prompt("Enter first number:"); 
+            var num2 = prompt("Enter second number:"); 
+ 
+            num1 = Number(num1); 
+            num2 = Number(num2); 
+ 
+            var sum = num1 + num2; 
+            var diff = num1 - num2; 
+            var prod = num1 * num2; 
+            var quot = num1 / num2; 
+            var comp = num1 > num2; 
+ 
+            alert( 
+                "Sum: " + sum + 
+                "\nDifference: " + diff + 
+                "\nProduct: " + prod + 
+                "\nQuotient: " + quot + 
+                "\nIs num1 > num2? " + comp 
+            ); 
+        } 
+ 
+        alert("Welcome to JavaScript!"); 
+        console.log("Hello Students!"); 
+ 
+        var name = "Ali"; 
+        var age = 20; 
+        var isStudent = true; 
+ 
+ 
+3 
+ 
+        var marks; 
+        var value = null; 
+ 
+        console.log(typeof name); 
+        console.log(typeof age); 
+        console.log(typeof isStudent); 
+        console.log(typeof value); 
+ 
+        var country = "Pakistan"; 
+        console.log("I love " + country); 
+        console.log(country.slice(0, 4)); 
+ 
+        var a = 10, b = 3; 
+        console.log("Sum:", a + b); 
+        console.log("Modulus:", a % b); 
+        console.log("Comparison:", a > b); 
+    </script> 
+ 
+</body> 
+</html> 
