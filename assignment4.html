@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    button {
+     background: linear-gradient(45deg, #ff6b6b, #feca57); /* original color */
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s; /* smooth transition */
+}
+
+    button:hover {
+    background: linear-gradient(45deg, #1dd1a1, #54a0ff); /* color on hover */
+}
+</style>
+<body>
+
+    <h1 style="color: red;">Assignment 4</h1>
+    <button style="border-radius: 10px;">changed color</button>
+    <script>
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+
+    
+</body>
+</html>
